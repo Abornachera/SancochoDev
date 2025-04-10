@@ -86,7 +86,7 @@ Bienvenido a la API de SancochoDev 🍲
 ]
 ```
 
-❌ **Error (404 Not Found):**
+❌ **No hay datos (204 No content):**
 
 ```json
 { "error": "No hay sancochos disponibles" }
@@ -125,7 +125,7 @@ Bienvenido a la API de SancochoDev 🍲
 }
 ```
 
-✅ **Respuesta exitosa (200 OK):**
+✅ **Respuesta exitosa (201 Created):**
 
 ```json
 { 
