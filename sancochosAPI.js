@@ -26,7 +26,7 @@ app.get('/sancochos', (req, res) => {
     try {
         //No hay sancochos disponibles
         if (sancochos.length === 0) {
-            return res.status(204).json({ error: "No hay sancochos disponibles" });
+            return res.status(204).send();
         }
 
         //Lista de sancochos obtenida correctamente
@@ -46,7 +46,7 @@ app.get('/sancochos/:id', (req, res) => {
     if(!sancocho){
         return res.status(404).json({error: 'Ese sancocho no existe.'});
     }else{
-        res.status(202).json(sancocho)
+        res.status(200).json(sancocho)
     }
 });
 
